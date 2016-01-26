@@ -65,9 +65,21 @@ for($i=0; $i<count($parts) - 1; $i++){
 				<td style='width:52px;'><img src='images/seahorselogo.gif' /></td><td style='width:194px;'><img src='images/usagestatistics_off.gif' id="angelfish" /></td>
 				<?php } ?>
 				</tr>
-				</table>
+<tr>
+<?php if (file_exists($pagePath . "management/index.php")) {?>
+<td style='width:52px;'><img src='images/starfishlogo.gif' hover="images/starfishlogo_over.gif" id="logo_starfish" /></td><td style='width:194px;'><a href='management/'><img src='images/management.gif' hover="images/management_over.gif" class="rollover" id="starfish" /></a></td>
+<?php } else { ?>
+<td style='width:52px;'><img src='images/starfishlogo.gif' /></td><td style='width:194px;'><img src='images/management_off.gif' id="starfish" /></td>
+<?php } ?>
+</tr>
 
-				</div>
+
+</table>
+			<br>	
+      <br> Need Help? Contact the <a href="mailto:coral-erm@listserv.nd.edu?subject=&quot;CORAL Help&quot;">List Server</a>.
+
+<br><span class="smallDarkRedText"><br>Don't have a login? <a href="http://coraldemo.library.tamu.edu/usermanagement/">Click Here</a> to create one.</span>
+        </div>
 				</center>
 			</td>
 		</tr>
